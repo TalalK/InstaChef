@@ -5,7 +5,7 @@ class Post < ActiveRecord::Base
 	  :s3_credentials => {
 	    :bucket => 'Instachef',
 	    :access_key_id => Rails.application.secrets.s3_access_key_id,
-	    :secret_access_key => Rails.application.secrets.s3_secret_acess_key
+	    :secret_access_key => Rails.application.secrets.s3_secret_access_key
 	  }
 	validates_attachment_content_type :picture, :content_type => /\Aimage\/.*\Z/
 	has_and_belongs_to_many :tags
