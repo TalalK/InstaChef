@@ -7,20 +7,22 @@
 }
 
 
-
 .post {
 	img {
 		max-width: 100%;
+		display: block;
+		margin: 0 auto;
 	}
 
 	h3 {
 		margin-top: 0;
-		margin-bottom: 0
+		margin-bottom: 0;
 	}
 
 	.tags a {
 		background: #428bca;
 		color: white;
+		font-family: 'Blackout-Midnight';
 		font-size: 22px;
 		padding: 10px;
 		display: inline-block;
@@ -30,3 +32,14 @@
 		margin-left: 10px;
 	}
 }
+
+@media(min-width: 767px) {
+	.post img {
+		display: inline
+	}
+
+	.post h3 {
+		color: Indian Red !important;
+		margin: 0 auto;
+	}
+}	
